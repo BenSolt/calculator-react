@@ -7,6 +7,8 @@ import {nums} from './data';
 import {ops} from './data';
 import {ids} from './data';
 
+import CoffeeForm from './components/CoffeeForm';
+
 // const nums = [7, 8, 9, 4, 5, 6, 1, 2, 3, 0];
 // const ops = ["/", "*", "-", "+"];
 // const ids = {
@@ -32,6 +34,8 @@ function App() {
 
   const [calculator, setCalculator] = useState("0");
   const [lastPressed, setLastPressed] = useState(undefined);
+
+ 
 
   const handleClick = (e) => {
     
@@ -84,6 +88,8 @@ function App() {
   };
 
   return (
+    <div className='holder'>
+
     <div className="calculator">
       <div id="display" className="display">
         <small>{oper}</small>
@@ -121,8 +127,16 @@ function App() {
         <button className="orange" onClick={handleClick} id="equals">
           =
         </button>
-      </div>
-    </div>
+      </div>      
+      
+      
+
+
+    </div> 
+
+    <CoffeeForm/> 
+    
+  </div>
   );
 }
 
