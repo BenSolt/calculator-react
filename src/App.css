@@ -1,110 +1,103 @@
-*{box-sizing: border-box;}
-.container{
-    width: 100%;
-    max-width: 220px;
-    height: auto;
-    margin: auto;
-    margin-top: 3rem;
-    background:black;
-    border-radius: 5px;
-    border: 5px solid black;
-    }
 
-.App{
-   
-    /* display: flex;  */
-    /* flex-direction: column-reverse;  */
-    padding: 10px;
-    
-}
-    
-
-    .logo{
-        width: 70px; 
-        margin: 7% 0 0 7%;
-        
-    }
-
-
-.screen{
-     width: 100%;
-    height: 55px;
-    background: rgb(49, 49, 49);
-    border-radius: 35px;
-    text-align: right;
-    padding-right: 10px;
-    padding: 10px;
-    color: white;
-    margin-bottom: 8px;
-    font-size: 25px;
+* {
+    box-sizing: border-box
+  }
   
-   
-    
-}
-
-.keypad{
+  body {
+    margin: 0;
+    background-color: #ecf0f1;
+    min-height: 100vh;
     display: flex;
-    
-}
-
-
-
-/*Btn Numbers  */
-
-.numbers{
-     width: 150px; 
-    
-}
-
-.btnNums{
-    height: 40px;
-    width: 40px;
-    background: blue;
-    border-radius: 50%;
-    border: none;
-    margin: 4px;
-    box-shadow: 0px 3px 2px black;
-    
-    
-}
-
-.btnNums:nth-child(10) {
-/* background: green; */
-width: 85px;
-border-radius: 50px;
-}
-
-button{
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .calculator {
+    background-color: #111;
+    box-shadow: 2px 2px 5px rgba(0,0,0,1);
+    height: 400px;
+    width: 256px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    border-radius: 3%;
+    justify-content: center;
+  }
+  
+  .display {
+    background: rgb(61, 61, 61);
+    padding: 20px 10px;
+    text-align: right;
+    position: relative;
+    margin-top: 5px;
+    width: 95%;
+    font-size: 36px;
     color: white;
-}
-
-/* Btn Operators */
-
-.operats{
-    border: 2px solid black;
-}
-
-.btnOpers{
-    height: 40px;
-    width: 40px;
-    background: rgb(71, 115, 218);
+    height: 70px;
+    border-radius: 5px;
+    border: 2px solid white;
+    
+  }
+  
+  .display small {
+    font-size: 12px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #EE9406;
+  }
+  .nums-container {
+    width: 75%;
+  }
+  
+  .ops-container {
+    width: 25%;
+  }
+  button {
     border-radius: 50%;
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    font-size: 24px;
+    background-color: white;
     border: none;
-    margin: 4px;
-    box-shadow: 0px 3px 2px black;
-}
+    cursor: pointer;
+    /* box-shadow: 0px 3px 2px rgb(107, 107, 107); */
+    border: 3px solid gray;
+  }
+  
+  button.hover {
+    opacity: 0.9;
+  }
 
+  button:active {
+    transform:scale(0.9)
+  }
 
-/* Btn Special */
+  button:focus {
+    outline: none;
+  }
+  
+  button.big-h {
+    border-radius: 50px;
+    width: 110px;
+  }
+  
+  button.orange {
+    background-color: #EE9406;
+    color: #fff;
+  
+  }
+  
+  button.dark-grey {
+    background-color: #323232;
+    color: #fff;
+  }
 
-
-
-.btnSpecials{
-    height: 40px;
-    width: 40px;
-    background: rgb(71, 115, 218);
-    border-radius: 50%;
-    border: none;
-    margin: 4px;
-    box-shadow: 0px 3px 2px black;
-}
+  .btnClear{
+    background-color: white;
+    border-radius: 50px;
+    width: 110px;
+    margin-right: 50%;
+  }

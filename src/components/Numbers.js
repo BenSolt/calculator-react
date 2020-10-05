@@ -1,6 +1,4 @@
 import React, {useState} from "react";
-import {numbers} from "./../data";
-
 
 
 const Numbers = (props) => {
