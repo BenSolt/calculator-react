@@ -28,18 +28,19 @@ import {ids} from './data';
 
 function App() {
 
-  const [oper, setOper] = useState(" ");
+  const [oper, setOper] = useState("a");
 
   const [calculator, setCalculator] = useState("0");
   const [lastPressed, setLastPressed] = useState(undefined);
 
   const handleClick = (e) => {
+    
     const { innerText } = e.target;
 
     switch (innerText) {
       case "AC":
         setCalculator("0");
-        setOper(" ")
+        setOper("a")
         break;
 
       case "=":
@@ -54,24 +55,27 @@ function App() {
         const last = splitted.slice(-1)[0];
         if (!last.includes(".")) {
           setCalculator(calculator + ".");
-          setOper(oper + ".");
+          // setOper(oper + ".");
         }
         break;
 
       default:
         let e = undefined;
         if (ops.includes(innerText)) {
+         
           if (ops.includes(lastPressed) && innerText !== "-") {
-            const lastNumberIdx = calculator.split('').reverse()
-              .findIndex(char => char !== ' ' && nums.includes(+char))
-            e = calculator.slice(0, calculator.length - lastNumberIdx) + ` ${innerText} `;
+              const lastNumberIdx = calculator.split('').reverse()
+                .findIndex(char => char !== ' ' && nums.includes(+char))
+              e = calculator.slice(0, calculator.length - lastNumberIdx) + ` ${innerText} `;
           } else {
             e = `${calculator} ${innerText} `;
           }
         } else {
           e = calculator === "0" ? innerText : calculator + innerText;
+         
         }
 
+        
         setCalculator(e);
         // setOper(e)
     }
