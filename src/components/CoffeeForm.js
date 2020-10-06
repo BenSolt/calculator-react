@@ -37,7 +37,7 @@ import React, { useState } from "react";
         <select onChange={onChange}  className="Input2" id="ratio" name="ratio">
             <option id='a'value="1">1:8</option>
             <option id='b' value="2">1:16</option>
-            <option id='c'value="3">1.32</option>   
+            <option id='c'value="3">1:32</option>   
         </select>
 
       {/* /////////////////////////////////// */}
