@@ -1,0 +1,22 @@
+1. add files to the website's files- at the same level of that site's main index.html file.
+
+    App.js, App.css, CoffeeForm.js, Numbers.js
+
+2. add an empty div in the existing site where you want your project to show up.
+
+    <div id="ben_solt_project"></div>
+
+3. copy paste those 3 script tags on this site to the existing site's index.html
+
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Load our React component. -->
+  <script src="app.js"></script>
+
+</body>
+
+5. paste these two lines in the bottom of your App.js file instead of export default App 
+
+const domContainer = document.querySelector('#ben_solt_project');
+ReactDOM.render(e(App), domContainer);

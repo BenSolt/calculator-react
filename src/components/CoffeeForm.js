@@ -14,12 +14,12 @@ import React, { useState } from "react";
         setGroundCoffee(8)
         setBrewedCoffee(8)
       }
-      if (option =='2'){
+      if (option ==='2'){
         setWaterAmount(540.64)
         setGroundCoffee(33.79)
         setBrewedCoffee(16)
       }  
-      if (option =='3'){
+      if (option ==='3'){
         setWaterAmount(32)
         setGroundCoffee(32)
         setBrewedCoffee(32)
