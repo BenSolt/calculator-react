@@ -18,7 +18,7 @@ const Numbers = (props) => {
           </button>
   ))}  
   
-      <button className="light-grey" onClick={props.onClick1} id="decimal">
+      <button className="dark-grey" onClick={props.onClick1} id="decimal">
           .
         </button>
     

@@ -1,6 +1,5 @@
 .calculator {
     background-color: #111;
-    box-shadow: 2px 2px 5px rgba(0,0,0,1);
     height: 400px;
     width: 256px;
     display: flex;
@@ -8,6 +7,7 @@
     padding: 5px;
     border-radius: 3%;
     justify-content: center;
+    box-shadow: 7px 10px 15px rgb(0, 0, 0)
   }
   
   .display {
@@ -22,6 +22,8 @@
     height: 70px;
     border-radius: 5px;
     border: 2px solid white;
+    box-shadow: inset 3px 3px 15px rgb(0, 0, 0)
+
     
   }
   
@@ -45,11 +47,9 @@
     height: 50px;
     width: 50px;
     font-size: 24px;
-    background-color: white;
-    border: none;
+    /* background-color: white; */
     cursor: pointer;
-    /* box-shadow: 0px 3px 2px rgb(107, 107, 107); */
-    border: 3px solid gray;
+    border: 3px solid rgb(109, 109, 109);
   }
   
   button.hover {
@@ -81,7 +81,6 @@
   }
 
   .btnClear{
-    background-color: white;
     border-radius: 50px;
     width: 110px;
     margin-right: 50%;

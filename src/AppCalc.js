@@ -76,7 +76,6 @@ function App() {
     <div className="calculator">
       <div id="display" className="display">
         <small>{oper}</small>
-        {/* <small>{calculator}</small> */}
         {calculator}
       </div>
       <div className="nums-container">
