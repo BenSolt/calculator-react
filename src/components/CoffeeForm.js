@@ -24,6 +24,7 @@ import React, { useState } from "react";
         setGroundCoffee(32)
         setBrewedCoffee(32)
       }
+ 
     }
 
     return (
@@ -31,7 +32,7 @@ import React, { useState } from "react";
 
      <h1>Coffee to Water Ratio Calculator</h1>
 
-      <form  >
+      <form>
         <h3>Ratio (Coffee : Water)</h3>
         <select onChange={onChange}  className="Input2" id="ratio" name="ratio">
             <option id='a'value="1">1:8</option>
@@ -47,6 +48,7 @@ import React, { useState } from "react";
             type="text"
             name="water"
             value={waterAmount}
+            onChange={onChange}
         />
 
         <select className="Input2" id="measurement" name="measurement">
@@ -63,6 +65,7 @@ import React, { useState } from "react";
             type="text"
             name="ground coffee"
             value={groundCoffee}
+            onChange={onChange}
         />
 
         <select className="Input2" id="measurement" name="measurement">
@@ -79,6 +82,7 @@ import React, { useState } from "react";
             type="text"
             name="brewed"
             value={brewedCoffee}
+            onChange={onChange}
         />
 
 

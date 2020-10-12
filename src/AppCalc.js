@@ -32,7 +32,7 @@ function App() {
 
       case "=":
         const evaluated = eval(calculator);
-   
+        
         setCalculator(evaluated);
         setOper(evaluated)
         break;
@@ -49,7 +49,7 @@ function App() {
       default:
         let e = undefined;
         if (ops.includes(innerText)) {
-         
+            console.log(innerText)
           if (ops.includes(lastPressed) && innerText !== "-") {
               const lastNumberIdx = calculator.split('').reverse()
                 .findIndex(char => char !== ' ' && nums.includes(+char))

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./App.css";
+import './Calculator.css';
 
 import CoffeeForm from './components/CoffeeForm';
+import AppCalc from './AppCalc';
 
 function App() {
 
@@ -9,7 +11,7 @@ function App() {
     <div className='holder'>
 
     <CoffeeForm/> 
-
+    <AppCalc/> 
 
   </div>
   );
