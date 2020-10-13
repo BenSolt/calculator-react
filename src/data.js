@@ -1,6 +1,6 @@
 
 const nums = [7, 8, 9, 4, 5, 6, 1, 2, 3, 0];
-const ops = ["/", "*", "-", "+"];
+const ops = ["÷", "*", "-", "+"];
 const ids = {
   7: "seven",
   8: "eight",
@@ -12,7 +12,7 @@ const ids = {
   2: "two",
   3: "three",
   0: "zero",
-  "/": "divide",
+  "÷": "divide",
   "*": "multiply",
   "-": "subtract",
   "+": "add"

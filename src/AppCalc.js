@@ -7,7 +7,6 @@ import {nums} from './data';
 import {ops} from './data';
 import {ids} from './data';
 
-import CoffeeForm from './components/CoffeeForm';
 
 
 
@@ -15,10 +14,9 @@ function App() {
 
   const [oper, setOper] = useState("a");
 
-  const [calculator, setCalculator] = useState("0");
+  const [display, setDisplay] = useState("0");
   const [lastPressed, setLastPressed] = useState(undefined);
 
- 
 
   const handleClick = (e) => {
     
@@ -26,22 +24,22 @@ function App() {
 
     switch (innerText) {
       case "AC":
-        setCalculator("0");
+        setDisplay("0");
         setOper("a")
         break;
 
       case "=":
-        const evaluated = eval(calculator);
+        const evaluated = eval(display);
         
-        setCalculator(evaluated);
+        setDisplay(evaluated);
         setOper(evaluated)
         break;
 
       case ".":
-        const splitted = calculator.split(/[+\-*/]/);
+        const splitted = display.split(/[+\-*/]/);
         const last = splitted.slice(-1)[0];
         if (!last.includes(".")) {
-          setCalculator(calculator + ".");
+          setDisplay(display + ".");
           // setOper(oper + ".");
         }
         break;
@@ -51,19 +49,19 @@ function App() {
         if (ops.includes(innerText)) {
             console.log(innerText)
           if (ops.includes(lastPressed) && innerText !== "-") {
-              const lastNumberIdx = calculator.split('').reverse()
+              const lastNumberIdx = display.split('').reverse()
                 .findIndex(char => char !== ' ' && nums.includes(+char))
-              e = calculator.slice(0, calculator.length - lastNumberIdx) + ` ${innerText} `;
+              e = display.slice(0, display.length - lastNumberIdx) + ` ${innerText} `;
           } else {
-            e = `${calculator} ${innerText} `;
+            e = `${display} ${innerText} `;
           }
         } else {
-          e = calculator === "0" ? innerText : calculator + innerText;
+          e = display === "0" ? innerText : display + innerText;
          
         }
 
         
-        setCalculator(e);
+        setDisplay(e);
         // setOper(e)
     }
     setLastPressed(innerText);
@@ -76,7 +74,7 @@ function App() {
     <div className="calculator">
       <div id="display" className="display">
         <small>{oper}</small>
-        {calculator}
+        {display}
       </div>
       <div className="nums-container">
         <button
@@ -95,6 +93,7 @@ function App() {
         
 
       </div>
+      
       <div className="ops-container">
         {ops.map((op) => (
           <button

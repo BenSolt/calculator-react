@@ -7,7 +7,8 @@
     padding: 5px;
     border-radius: 3%;
     justify-content: center;
-    box-shadow: 7px 10px 15px rgb(0, 0, 0)
+    box-shadow: 7px 10px 15px rgb(0, 0, 0);
+    margin: 1rem;
   }
   
   .display {
@@ -78,6 +79,13 @@
   button.dark-grey {
     background-color: #323232;
     color: #fff;
+  }
+
+  button.dark-grey2 {
+    background-color: #323232;
+    color: #fff;
+    border-radius: 50px;
+    width: 110px;
   }
 
   .btnClear{
