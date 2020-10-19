@@ -1,0 +1,60 @@
+/* /////BUTTON PANEL/////////////////////////// */
+
+.button-panel {
+    background-color: #111;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+  }
+  
+  .button-panel > div {
+    width: 100%;
+    margin-bottom: 1px;
+    flex: 1 0 auto;
+    display: flex;
+  }
+
+/*//////////BUTTONS/////////////////  */
+
+/* .component-button {
+  display: inline-flex;
+  width: 25%;
+  flex: 1 0 auto;
+} */
+
+.component-button.wide {
+  width: 50%;
+
+} 
+
+
+
+.component-button button {
+  background-color:  #f5923e;
+  /* background-color:  #323232; */
+  color: white;
+  /* border: 0;
+  font-size: 1.5rem;
+  margin: 0 1px 0 0;
+  flex: 1 0 auto;
+  padding: 0; */
+
+}
+
+button:focus {
+  outline: none;
+  background: #ff0000
+}
+
+.component-button.gray button {
+  background-color:  #323232;
+  /* background-color: #f5923e; */
+  color: white;
+} 
+
+.component-button.white button {
+  background-color: white;
+  /* background-color: #f5923e; */
+  color: black;
+} 
+

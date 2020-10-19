@@ -40,6 +40,7 @@
   .ops-container {
     width: 25%;
   }
+  
   button {
     border-radius: 50%;
     margin: 5px;
@@ -55,11 +56,13 @@
   }
 
   button:active {
-    transform:scale(0.9)
+    transform:scale(0.9);
+    
   }
 
   button:focus {
     outline: none;
+    background: #ff0000
   }
   
   button.big-h {
@@ -70,19 +73,11 @@
   button.orange {
     background-color: #EE9406;
     color: #fff;
-  
   }
   
   button.dark-grey {
     background-color: #323232;
     color: #fff;
-  }
-
-  button.dark-grey2 {
-    background-color: #323232;
-    color: #fff;
-    border-radius: 50px;
-    width: 110px;
   }
 
   .btnClear{

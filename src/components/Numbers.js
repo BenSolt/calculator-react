@@ -1,11 +1,11 @@
-import React, {useState} from "react";
+import React from "react";
 
 
 const Numbers = (props) => {
 
 
   return (
-    <div className="numbers">
+    <div>
 
   {props.nums1.map((num, ids) => (
           <button

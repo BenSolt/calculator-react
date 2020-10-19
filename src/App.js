@@ -1,18 +1,28 @@
 import React, { useState } from "react";
 import "./App.css";
 import './Calculator.css';
+import "./Calculator2.css";
+
 
 import CoffeeForm from './components/CoffeeForm';
 import AppCalc from './AppCalc';
+import AppCalc2 from './AppCalc2';
 
 
 function App() {
+
+  const [state, setState] = useState("");
+  
+
+
 
   return (
     <div className='holder'>
 
     <CoffeeForm/> 
     <AppCalc/> 
+    <AppCalc2/> 
+
 
   </div>
   );
