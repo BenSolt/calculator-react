@@ -19,7 +19,6 @@ function App() {
   return (
     <div className='holder'>
 
-    <CoffeeForm/> 
     <AppCalc/> 
     <AppCalc2/> 
 
